@@ -16,6 +16,7 @@ axios.defaults.baseURL = 'http://127.0.0.1:8000'
 
 app.use(createPinia())
 app.use(router, axios)
+app.mount('#app')
 
 
 
@@ -103,5 +104,3 @@ export default function mainJs(Vue) {
 
     })(jQuery);
 }
-
-app.mount('#app')
