@@ -28,7 +28,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" v-if="filter === 'all'" v-for="(listing, index) in firstThreeListings" :key="index" data-wow-delay="0.1s">
                         <div class="property-item rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
-                                <a href=""><img class="img-fluid" :src="listing.photo_main" alt=""></a>
+                                <router-link :to="{name: 'propertydetails', params:{slug: listing.slug}}"><img class="img-fluid" :src="listing.photo_main" alt=""></router-link>
                                 <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">{{ listing.sale_type }}</div>
                                 <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">{{ listing.home_type }}</div>
                             </div>
@@ -48,7 +48,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" v-else-if="filter === 'sale'" v-for="(listing, i) in firstThreeListingsForSale" :key="i" data-wow-delay="0.1s">
                         <div class="property-item rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
-                                <a href=""><img class="img-fluid" :src="listing.photo_main" alt=""></a>
+                                <router-link :to="{name: 'propertydetails', params:{slug: listing.slug}}"><img class="img-fluid" :src="listing.photo_main" alt=""></router-link>
                                 <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">{{ listing.sale_type }}</div>
                                 <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">{{ listing.home_type }}</div>
                             </div>
@@ -68,7 +68,7 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" v-else-if="filter === 'rent'" v-for="(listing, idx) in firstThreeListingsForRent" :key="idx" data-wow-delay="0.1s">
                         <div class="property-item rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
-                                <a href=""><img class="img-fluid" :src="listing.photo_main" alt=""></a>
+                                <router-link :to="{name: 'propertydetails', params:{slug: listing.slug}}"><img class="img-fluid" :src="listing.photo_main" alt=""></router-link>
                                 <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">{{ listing.sale_type }}</div>
                                 <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">{{ listing.home_type }}</div>
                             </div>

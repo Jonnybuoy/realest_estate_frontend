@@ -147,11 +147,15 @@ export default {
             selectedPropertyType.value === '' || listing.property_type === selectedPropertyType.value
             const locationMatch =
             selectedLocation.value === '' || listing.location === selectedLocation.value
+            
+
+            return keywordMatch && propertyTypeMatch && locationMatch
         })
+        console.log('filteredListings', filteredListings)
         router.push({
             name: 'allproperties',
-            params: {
-            filteredListings
+            query: {
+            filter: JSON.stringify(filteredListings)
             }
         });
     }

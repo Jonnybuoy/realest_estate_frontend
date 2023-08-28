@@ -31,6 +31,13 @@ export const useListingsStore = defineStore('listingsStore', {
         firstThreeListingsForRent(getters) {
             const filteredListings = getters.listingsForRent;
             return filteredListings.slice(0);
+        },
+
+        getListingDetails() {
+            return slug => {
+                console.log('storeslug', slug)
+                return this.listings.find(listing => listing.slug === slug)
+            }
         }
     },
 
