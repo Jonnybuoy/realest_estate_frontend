@@ -6,6 +6,7 @@ export const useListingsStore = defineStore('listingsStore', {
 
     state: () => ({
         listings: [],
+        listingDetails: []
 
     }),
 
@@ -36,7 +37,7 @@ export const useListingsStore = defineStore('listingsStore', {
         getListingDetails() {
             return slug => {
                 console.log('storeslug', slug)
-                return this.listings.find(listing => listing.slug === slug)
+                return this.fetchListingDetails(slug)
             }
         }
     },
@@ -46,7 +47,7 @@ export const useListingsStore = defineStore('listingsStore', {
             await axios
                 .get('/api/listings/')
                 .then(response => {
-                    console.log('response', response.data)
+                    console.log('listings', response.data)
 
                     this.listings = response.data
                 })
@@ -54,5 +55,17 @@ export const useListingsStore = defineStore('listingsStore', {
                     console.log(error)
                 })
         },
+        async fetchListingDetails(slug) {
+            await axios
+                .get(`/api/listings/${slug}`)
+                .then(response => {
+                    console.log('listingDetails', response.data)
+
+                    this.listingDetails = response.data
+                })
+                .catch((error) => {
+                    console.log(error)
+                })
+        }
     }
 })

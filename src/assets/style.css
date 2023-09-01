@@ -300,6 +300,31 @@
 }
 
 
+/*** Property Details ***/
+
+.property-details {
+    height: auto;
+}
+
+.property-details img {
+    transition: .5s;
+    width: auto;
+    height: 400px;
+}
+
+.gallery img {
+    width: 350px;
+    height: 250px;
+}
+
+.property-price {
+    font-size: 20px;
+    font-family: serif;
+    font-style: bold;
+    color: black;
+}
+
+
 /*** Team ***/
 
 .team-item {

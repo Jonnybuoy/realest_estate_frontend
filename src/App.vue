@@ -6,7 +6,7 @@
             <div class="icon p-2 me-2">
                 <img class="img-fluid" src="src/img/icon-deal.png" alt="Icon" style="width: 30px; height: 30px;">
             </div>
-            <h1 class="m-0 text-primary">Realest Estate</h1>
+            <h1 class="m-0 text-primary">Hina Homes</h1>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,22 @@
                 </div>
                 <a href="" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Add Property</a>
+            <div>
+            <template v-if="userStore.user.isAuthenticated && userStore.user.id">
+                <router-link :to="{name: 'home'}" class="btn btn-primary px-3 d-none d-lg-flex" @click="logout">
+                    Logout
+                </router-link>
+            </template>
+
+            <template v-else>
+                <router-link :to="{name: 'login'}" class="btn btn-primary px-3 d-none d-lg-flex">
+                    Login
+                </router-link>
+                <router-link :to="{name: 'signup'}" class="btn btn-primary px-3 d-none d-lg-flex">
+                    Signup
+                </router-link>
+            </template>
+            </div>
         </div>
     </nav>
     </div>
@@ -42,10 +57,46 @@
 
 <script>
 import { RouterLink, RouterView } from 'vue-router'
+import { useUserStore } from '@/stores/user'
+import axios from 'axios'
 // import NavBar from './components/NavBar.vue'
+
+export default {
+    setup() {
+        const userStore = useUserStore()
+
+        return {
+            userStore
+        }
+    },
+
+    beforeCreate() {
+        this.userStore.initStore()
+
+        const token = this.userStore.user.access
+
+        if (token) {
+            axios.defaults.headers.common["Authorization"] = "Bearer " + token;
+        } else {
+            axios.defaults.headers.common["Authorization"] = "";
+        }
+    },
+
+    methods: {
+        logout() {
+            console.log('Log out')
+
+            this.userStore.removeToken()
+
+            this.$router.push('/login')
+        }
+    }
+}
 
 </script>
 
-<style scoped>
+<style>
+@import 'src/assets/bootstrap.min.css';
+@import 'src/assets/style.css';
 
 </style>

@@ -30,7 +30,7 @@
               >
                 <div class="property-item rounded overflow-hidden">
                   <div class="position-relative overflow-hidden">
-                    <a href=""><img class="img-fluid" :src="listing.photo_main" alt="" /></a>
+                    <router-link :to="{name: 'propertydetails', params:{slug: listing.slug}}"><img class="img-fluid" :src="listing.photo_main" alt=""></router-link>
                     <div
                       class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
                     >
@@ -118,7 +118,7 @@
             >
               <div class="property-item rounded overflow-hidden">
                 <div class="position-relative overflow-hidden">
-                  <a href=""><img class="img-fluid" :src="listing.photo_main" alt="" /></a>
+                  <router-link :to="{name: 'propertydetails', params:{slug: listing.slug}}"><img class="img-fluid" :src="listing.photo_main" alt=""></router-link>
                   <div
                     class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
                   >
@@ -160,7 +160,7 @@
             >
               <div class="property-item rounded overflow-hidden">
                 <div class="position-relative overflow-hidden">
-                  <a href=""><img class="img-fluid" :src="listing.photo_main" alt="" /></a>
+                  <router-link :to="{name: 'propertydetails', params:{slug: listing.slug}}"><img class="img-fluid" :src="listing.photo_main" alt=""></router-link>
                   <div
                     class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
                   >
@@ -202,7 +202,7 @@
             >
               <div class="property-item rounded overflow-hidden">
                 <div class="position-relative overflow-hidden">
-                  <a href=""><img class="img-fluid" :src="listing.photo_main" alt="" /></a>
+                  <router-link :to="{name: 'propertydetails', params:{slug: listing.slug}}"><img class="img-fluid" :src="listing.photo_main" alt=""></router-link>
                   <div
                     class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
                   >

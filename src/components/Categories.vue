@@ -3,7 +3,7 @@
     <div class="container">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <h1 class="mb-3">Property Types</h1>
-            <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+            <p>Here are some of the property types that you can find at Hina Homes.</p>
         </div>
         <div class="row g-4">
             <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -13,7 +13,7 @@
                             <img class="img-fluid" src="src/img/icon-apartment.png" alt="Icon">
                         </div>
                         <h6>Apartment</h6>
-                        <span>123 Properties</span>
+                        <span>12 Properties</span>
                     </div>
                 </a>
             </div>
@@ -23,8 +23,8 @@
                         <div class="icon mb-3">
                             <img class="img-fluid" src="src/img/icon-villa.png" alt="Icon">
                         </div>
-                        <h6>Villa</h6>
-                        <span>123 Properties</span>
+                        <h6>Studio Apartments</h6>
+                        <span>20 Properties</span>
                     </div>
                 </a>
             </div>
@@ -34,8 +34,8 @@
                         <div class="icon mb-3">
                             <img class="img-fluid" src="src/img/icon-house.png" alt="Icon">
                         </div>
-                        <h6>Home</h6>
-                        <span>123 Properties</span>
+                        <h6>Bedsitters</h6>
+                        <span>50 Properties</span>
                     </div>
                 </a>
             </div>
@@ -45,8 +45,8 @@
                         <div class="icon mb-3">
                             <img class="img-fluid" src="src/img/icon-housing.png" alt="Icon">
                         </div>
-                        <h6>Office</h6>
-                        <span>123 Properties</span>
+                        <h6>One Bedroom Apartments</h6>
+                        <span>20 Properties</span>
                     </div>
                 </a>
             </div>
@@ -56,8 +56,8 @@
                         <div class="icon mb-3">
                             <img class="img-fluid" src="src/img/icon-building.png" alt="Icon">
                         </div>
-                        <h6>Building</h6>
-                        <span>123 Properties</span>
+                        <h6>Two Bedroom Apartments</h6>
+                        <span>20 Properties</span>
                     </div>
                 </a>
             </div>
@@ -67,8 +67,8 @@
                         <div class="icon mb-3">
                             <img class="img-fluid" src="src/img/icon-neighborhood.png" alt="Icon">
                         </div>
-                        <h6>Townhouse</h6>
-                        <span>123 Properties</span>
+                        <h6>Hostels</h6>
+                        <span>30 Properties</span>
                     </div>
                 </a>
             </div>
@@ -79,7 +79,7 @@
                             <img class="img-fluid" src="src/img/icon-condominium.png" alt="Icon">
                         </div>
                         <h6>Shop</h6>
-                        <span>123 Properties</span>
+                        <span>10 Properties</span>
                     </div>
                 </a>
             </div>
@@ -89,8 +89,8 @@
                         <div class="icon mb-3">
                             <img class="img-fluid" src="src/img/icon-luxury.png" alt="Icon">
                         </div>
-                        <h6>Garage</h6>
-                        <span>123 Properties</span>
+                        <h6>Office</h6>
+                        <span>12 Properties</span>
                     </div>
                 </a>
             </div>

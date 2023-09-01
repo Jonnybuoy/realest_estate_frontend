@@ -10,12 +10,25 @@ import 'owl.carousel/dist/owl.carousel.min.js'
 
 import $ from 'jquery';
 
+/* import the fontawesome core */
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+/* import specific icons */
+import { faLocationDot, faTags } from '@fortawesome/free-solid-svg-icons'
+
+/* add icons to the library */
+library.add(faLocationDot, faTags)
+
 const app = createApp(App)
 
 axios.defaults.baseURL = 'http://127.0.0.1:8000'
 
 app.use(createPinia())
 app.use(router, axios)
+app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')
 
 
