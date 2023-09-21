@@ -15,6 +15,20 @@
     z-index: 99;
 }
 
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+    max-width: none;
+    /* Remove the max-width restriction */
+    width: 100%;
+    /* Set the width to 100% */
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+}
+
 
 /*** Spinner ***/
 
