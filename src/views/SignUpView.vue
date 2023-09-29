@@ -23,8 +23,8 @@
       </div>
 
       <div class="form-outline mb-4">
-        <label class="form-label" for="form2Example2">Repeat Password</label>
-        <input type="password" v-model="form.password2" placeholder="Repeat your password" class="form-control" />
+        <label class="form-label" for="form2Example2">Confirm Password</label>
+        <input type="password" v-model="form.password2" placeholder="Confirm your password" class="form-control" />
 
       </div>
 
