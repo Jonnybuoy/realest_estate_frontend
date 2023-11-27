@@ -4,8 +4,10 @@ import AllProperties from '../views/AllProperties.vue'
 import SignUpView from '../views/SignUpView.vue'
 import LoginView from '../views/LoginView.vue'
 import About from '../components/About.vue'
+import CallToAction from '../components/CallToAction.vue'
 import PropertyDetails from '../components/PropertyDetails.vue'
 import TermsAndConditions from '../components/TermsAndConditions.vue'
+import PrivacyPolicy from '../components/PrivacyPolicy.vue'
 
 const router = createRouter({
     history: createWebHistory(
@@ -36,15 +38,25 @@ const router = createRouter({
             component: About
         },
         {
+            path: '/contact',
+            name: 'contact',
+            component: CallToAction
+        },
+        {
             path: '/propertydetails/:slug',
             name: 'propertydetails',
             component: PropertyDetails
         },
         {
-            path: '/terms&conditons',
-            name: 'terms&conditions',
+            path: '/termsandconditons',
+            name: 'termsandconditions',
             component: TermsAndConditions
         },
+        {
+            path: '/privacypolicy',
+            name: 'privacypolicy',
+            component: PrivacyPolicy
+        }
 
     ]
 })

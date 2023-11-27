@@ -1,7 +1,11 @@
 <template>
-  <div v-if="listingDetails" class="container mt-5">
-    <div class="row">
-      <div class="property-details col-md-8">
+  <div class="container mt-5">
+    <div v-if="!userStore.user.id">
+      <p>Please <router-link :to="{name: 'login'}">login</router-link> to your account to view property details.</p>
+
+    </div>
+    <div v-else class="row">
+      <div v-if="listingDetails" class="property-details col-md-8">
         <!-- Main Property Photo -->
         <img :src="listingDetails.photo_main" alt="Property Photo" class="img-fluid mb-4" />
 
@@ -28,8 +32,8 @@
              v-for="(photo, index) in galleryImages"
              :key="index"
              :href="photo.largeURL"
-             data-pswp-width="1500"
-             data-pswp-height="1500"
+             data-pswp-width="800"
+             data-pswp-height="800"
              class="gallery col-md-4 mb-3">
             <img
               v-if="photo.thumbnailURL"
@@ -54,6 +58,7 @@ import { useListingsStore } from '../stores/listings'
 import { ref, onMounted, computed, watchEffect } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useRouter } from 'vue-router'
+import { useUserStore } from '@/stores/user'
 
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
 import 'photoswipe/style.css';
@@ -64,6 +69,7 @@ export default {
   setup() {
     const router = useRouter()
     const listingsStore = useListingsStore()
+    const userStore = useUserStore()
 
     console.log('router', router)
 
@@ -107,6 +113,7 @@ export default {
 
 
     return {
+      userStore,
       listingsStore,
       listings,
       listingDetails,

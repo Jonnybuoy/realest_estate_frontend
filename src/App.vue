@@ -11,7 +11,7 @@
               style="width: 30px; height: 30px"
             />
           </div>
-          <h1 class="m-0 text-primary">Hina Homes</h1>
+          <h1 class="m-0 text-primary">Hina</h1>
         </a>
         <button
           type="button"

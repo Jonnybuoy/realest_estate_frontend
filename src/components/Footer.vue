@@ -16,11 +16,11 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-white mb-4">Quick Links</h5>
-                <a class="btn btn-link text-white-50" href="">About Us</a>
-                <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                <a class="btn btn-link text-white-50" href="">Our Services</a>
-                <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                <router-link :to="{name: 'about'}" class="btn btn-link text-white-50">About Us</router-link>
+                <router-link :to="{name: 'contact'}" class="btn btn-link text-white-50">Contact Us</router-link>
+                <router-link :to="{name: 'allproperties'}" class="btn btn-link text-white-50">Properties</router-link>
+                <router-link :to="{name: 'privacypolicy'}" class="btn btn-link text-white-50">Privacy Policy</router-link>
+                <router-link :to="{name: 'termsandconditions'}" class="btn btn-link text-white-50">Terms & Condition</router-link>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-white mb-4">Photo Gallery</h5>

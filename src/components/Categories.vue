@@ -3,7 +3,7 @@
     <div class="container">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <h1 class="mb-3">Property Types</h1>
-            <p>Here are some of the property types that you can find at Hina Homes.</p>
+            <p>Here are some of the property types that you can find at Hina.</p>
         </div>
         <div class="row g-4">
             <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">

@@ -2,7 +2,7 @@
   <div class="container-center">
     <form class="form-container" v-on:submit.prevent="submitForm">
       <div class="form-outline mb-4">
-          <h1 class="mb-3">Register Your Account</h1>
+          <h1 class="mb-3" style="color:#00B98E;">Register Your Account</h1>
       </div>
       <!-- Name input -->
       <div class="form-outline mb-4">
@@ -33,8 +33,8 @@
         <div class="col d-flex justify-content-center">
           <!-- Checkbox -->
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-            <label class="form-check-label" for="form2Example31"> Accept <router-link :to="{name: 'terms&conditions'}">Terms And Conditions</router-link> </label>
+            <!-- <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked /> -->
+            <label class="form-check-label" for="form2Example31"> By signing in, you consent to accepting our <router-link :to="{name: 'termsandconditions'}">Terms And Conditions</router-link> and <router-link :to="{name: 'privacypolicy'}">Privacy Policy</router-link> </label>
           </div>
         </div>
 
@@ -55,7 +55,7 @@
           <i class="fab fa-facebook-f"></i>
         </button>
 
-        <button type="button" class="btn btn-link btn-floating mx-1">
+        <button @click="loginWithGoogle" type="button" class="btn btn-link btn-floating mx-1">
           <i class="fab fa-google"></i>
         </button>
 
@@ -140,6 +140,10 @@ export default {
             }
 
 
+        },
+
+        loginWithGoogle() {
+          window.location.href = 'http://127.0.0.1:8000/auth/login/google-oauth2/';
         }
     }
 }
