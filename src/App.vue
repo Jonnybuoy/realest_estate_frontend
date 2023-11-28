@@ -6,7 +6,7 @@
           <div class="icon p-2 me-2">
             <img
               class="img-fluid"
-              :src="require('@/img/icon-deal.png')"
+              src='/img/icon-deal.png'
               alt="Icon"
               style="width: 30px; height: 30px"
             />
@@ -106,7 +106,7 @@ export default {
     }, 1)
 
     // Initiate the wowjs
-    new WOW.WOW().init()
+    new WOW().init()
 
     // Sticky Navbar
     $(window).scroll(function () {

@@ -51,7 +51,7 @@ export default function mainJs(Vue) {
 
 
         // Initiate the wowjs
-        new WOW.WOW().init();
+        new WOW().init();
 
 
         // Sticky Navbar

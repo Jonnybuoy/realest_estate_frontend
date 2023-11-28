@@ -10,7 +10,7 @@
                 <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                     <div class="rounded p-4">
                         <div class="icon mb-3">
-                            <img class="img-fluid" :src="require('src/img/icon-apartment.png')" alt="Icon">
+                            <img class="img-fluid" src="/img/icon-apartment.png" alt="Icon">
                         </div>
                         <h6>Apartment</h6>
                         <span>12 Properties</span>
@@ -21,7 +21,7 @@
                 <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                     <div class="rounded p-4">
                         <div class="icon mb-3">
-                            <img class="img-fluid" :src="require('src/img/icon-villa.png')" alt="Icon">
+                            <img class="img-fluid" src="/img/icon-villa.png" alt="Icon">
                         </div>
                         <h6>Studio Apartments</h6>
                         <span>20 Properties</span>
@@ -32,7 +32,7 @@
                 <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                     <div class="rounded p-4">
                         <div class="icon mb-3">
-                            <img class="img-fluid" :src="require('src/img/icon-house.png')" alt="Icon">
+                            <img class="img-fluid" src="/img/icon-house.png" alt="Icon">
                         </div>
                         <h6>Bedsitters</h6>
                         <span>50 Properties</span>
@@ -43,7 +43,7 @@
                 <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                     <div class="rounded p-4">
                         <div class="icon mb-3">
-                            <img class="img-fluid" :src="require('src/img/icon-housing.png')" alt="Icon">
+                            <img class="img-fluid" src="/img/icon-housing.png" alt="Icon">
                         </div>
                         <h6>One Bedroom Apartments</h6>
                         <span>20 Properties</span>
@@ -54,7 +54,7 @@
                 <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                     <div class="rounded p-4">
                         <div class="icon mb-3">
-                            <img class="img-fluid" :src="require('src/img/icon-building.png')" alt="Icon">
+                            <img class="img-fluid" src="/img/icon-building.png" alt="Icon">
                         </div>
                         <h6>Two Bedroom Apartments</h6>
                         <span>20 Properties</span>
@@ -65,7 +65,7 @@
                 <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                     <div class="rounded p-4">
                         <div class="icon mb-3">
-                            <img class="img-fluid" :src="require('src/img/icon-neighborhood.png')" alt="Icon">
+                            <img class="img-fluid" src="/img/icon-neighborhood.png" alt="Icon">
                         </div>
                         <h6>Hostels</h6>
                         <span>30 Properties</span>
@@ -76,7 +76,7 @@
                 <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                     <div class="rounded p-4">
                         <div class="icon mb-3">
-                            <img class="img-fluid" :src="require('src/img/icon-condominium.png')" alt="Icon">
+                            <img class="img-fluid" src="/img/icon-condominium.png" alt="Icon">
                         </div>
                         <h6>Shop</h6>
                         <span>10 Properties</span>
@@ -87,7 +87,7 @@
                 <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                     <div class="rounded p-4">
                         <div class="icon mb-3">
-                            <img class="img-fluid" :src="require('src/img/icon-luxury.png')" alt="Icon">
+                            <img class="img-fluid" src="/img/icon-luxury.png" alt="Icon">
                         </div>
                         <h6>Office</h6>
                         <span>12 Properties</span>
