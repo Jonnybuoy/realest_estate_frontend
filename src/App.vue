@@ -6,7 +6,7 @@
           <div class="icon p-2 me-2">
             <img
               class="img-fluid"
-              src="src/img/icon-deal.png"
+              :src="require('@/img/icon-deal.png')"
               alt="Icon"
               style="width: 30px; height: 30px"
             />
@@ -85,7 +85,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import { useUserStore } from '@/stores/user'
 import axios from 'axios'
 // import NavBar from './components/NavBar.vue'
-import WOW from 'wowjs/dist/wow.js';
+import WOW from 'wow.js';
 import 'owl.carousel/dist/owl.carousel.min.js'
 
 export default {
