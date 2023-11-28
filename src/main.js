@@ -5,7 +5,7 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios'
 
-import WOW from 'wowjs/dist/wow.js';
+import WOW from 'wow.js';
 import 'owl.carousel/dist/owl.carousel.min.js'
 
 import $ from 'jquery';
